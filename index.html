@@ -11,15 +11,21 @@
     </header>
     <section>
       <form action="#" method="get">
-        <!-- <fieldset>
-
+        <fieldset>
           <legend>Dados Pessoais</legend>
 
           <label for="name">Nome</label>
           <input id="name" type="text" name="userName" required />
 
           <label for="age">Idade</label>
-          <input id="age" type="number" name="age" min="12" max="100" required />
+          <input
+            id="age"
+            type="number"
+            name="age"
+            min="12"
+            max="100"
+            required
+          />
           <br />
           <label for="birthDate">Data de nascimento</label>
           <input id="birthDate" type="date" name="userBirthDate" />
@@ -29,7 +35,7 @@
           <br />
           <label for="phoneNumber">Telefone</label>
           <input
-          id="phoneNumber"
+            id="phoneNumber"
             type="tel"
             name="UserTelNumber"
             pattern="[0-9]{11}"
@@ -38,11 +44,9 @@
           <br />
           <label for="image">Upload de foto</label>
           <input id="image" type="file" name="UserImage" accept="image/*" />
+        </fieldset>
 
-        </fieldset>-->
-
-        <!-- <fieldset>
-
+        <fieldset>
           <legend>Perfil</legend>
 
           <p>Gênero:</p>
@@ -52,7 +56,12 @@
           <input id="masc" type="radio" name="UserGender" value="Masculino" />
           <label for="masc">Masculino</label>
 
-          <input id="notInformed" type="radio" name="UserGender" value="notInformed" />
+          <input
+            id="notInformed"
+            type="radio"
+            name="UserGender"
+            value="notInformed"
+          />
           <label for="notInformed">Prefiro não informar</label>
           <br />
 
@@ -64,51 +73,49 @@
             <option value="Divorciado(a)">Divorciado(a)</option>
             <option value="União estável">União estável</option>
           </select>
+        </fieldset>
 
-        </fieldset> -->
+        <fieldset>
+          <label for="state">Estado:</label>
+          <select id="state" name="userState" required>
+            <option value="acre">Acre</option>
+            <option value="alagoas">Alagoas</option>
+            <option value="amapa">Amapá</option>
+            <option value="amazonas">Amazonas</option>
+            <option value="bahia">Bahia</option>
+            <option value="ceara">Ceará</option>
+            <option value="distritoFederal">Distrito Federal</option>
+            <option value="espiritoSanto">Espirito Santo</option>
+            <option value="goias">Goiás</option>
+            <option value="maranhao">Maranhão</option>
+            <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+            <option value="matoGrosso">Mato Grosso</option>
+            <option value="minasGerais">Minas Gerais</option>
+            <option value="para">Pará</option>
+            <option value="paraiba">Paraíba</option>
+            <option value="parana">Paraná</option>
+            <option value="pernambuco">Pernambuco</option>
+            <option value="piaui">Piauí</option>
+            <option value="rioDeJaneiro">Rio de Janeiro</option>
+            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+            <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+            <option value="rondonia">Rondônia</option>
+            <option value="roraima">Roraima</option>
+            <option value="santaCatarina">Santa Catarina</option>
+            <option value="saoPaulo">São Paulo</option>
+            <option value="sergipe">Sergipe</option>
+            <option value="tocantins">Tocantins</option>
+          </select>
 
-        <!-- <fieldset>
-
-        <label for="state">Estado:</label>
-        <select id="state" name="userState" required>
-          <option value="acre">Acre</option>
-          <option value="alagoas">Alagoas</option>
-          <option value="amapa">Amapá</option>
-          <option value="amazonas">Amazonas</option>
-          <option value="bahia">Bahia</option>
-          <option value="ceara">Ceará</option>
-          <option value="distritoFederal">Distrito Federal</option>
-          <option value="espiritoSanto">Espirito Santo</option>
-          <option value="goias">Goiás</option>
-          <option value="maranhao">Maranhão</option>
-          <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
-          <option value="matoGrosso">Mato Grosso</option>
-          <option value="minasGerais">Minas Gerais</option>
-          <option value="para">Pará</option>
-          <option value="paraiba">Paraíba</option>
-          <option value="parana">Paraná</option>
-          <option value="pernambuco">Pernambuco</option>
-          <option value="piaui">Piauí</option>
-          <option value="rioDeJaneiro">Rio de Janeiro</option>
-          <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
-          <option value="rioGrandeDoSul">Rio Grande do Sul</option>
-          <option value="rondonia">Rondônia</option>
-          <option value="roraima">Roraima</option>
-          <option value="santaCatarina">Santa Catarina</option>
-          <option value="saoPaulo">São Paulo</option>
-          <option value="sergipe">Sergipe</option>
-          <option value="tocantins">Tocantins</option>
-        </select>
-
-        <label for="city">Cidade:</label>
-        <input
-          type="text"
-          id="city"
-          name="userCity"
-          autocomplete="address-level2"
-          placeholder="Ex.: Campinas"/>
-
-        </fieldset> -->
+          <label for="city">Cidade:</label>
+          <input
+            type="text"
+            id="city"
+            name="userCity"
+            autocomplete="address-level2"
+            placeholder="Ex.: Campinas"
+          />
+        </fieldset>
 
         <fieldset>
           <legend>Hábitos</legend>
@@ -149,21 +156,20 @@
         </fieldset>
         <fieldset>
           <legend>Opinião</legend>
-
           <p>O que você acha da qualidade do nosso serviço?</p>
 
-          <input type="radio" id="otima" name="opinion" value="otima" />
+          <input type="radio" id="otima" name="userOpinion" value="otima" />
           <label for="otima">Ótima</label><br />
 
           <input type="radio" id="boa" name="userOpinion" value="boa" />
-          <label for="boa">Boa</label>
-          <br />
+          <label for="boa">Boa</label><br />
+
           <input type="radio" id="regular" name="userOpinion" value="regular" />
-          <label for="regular">Regular</label>
-          <br />
+          <label for="regular">Regular</label><br />
+
           <input type="radio" id="ruim" name="userOpinion" value="ruim" />
-          <label for="ruim">Ruim</label>
-          <br />
+          <label for="ruim">Ruim</label><br />
+
           <label for="comment">Escreva o motivo da sua escolha:</label>
           <br />
           <textarea
