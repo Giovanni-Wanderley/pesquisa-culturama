@@ -30,7 +30,7 @@ form {
 
 fieldset {
     padding: 15px;
-    border: 1 px solid #cccccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -39,4 +39,13 @@ legend {
     font-weight: bold;
     font-size: 18px;
     padding: 0 5px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: 500;
+    margin-bottom: 5px;
 }
