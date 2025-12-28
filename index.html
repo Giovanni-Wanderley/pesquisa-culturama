@@ -54,7 +54,8 @@
                 type="tel"
                 name="UserTelNumber"
                 pattern="[0-9]{11}"
-                placeholder="DDD + número sem espaços ou hífem" aria-describedby="phoneHelp"
+                placeholder="DDD + número sem espaços ou hífem"
+                aria-describedby="phoneHelp"
               />
               <small id="phoneHelp"
                 >Preencha com 11 digítos no formato DD + número sem espaços ou
@@ -63,7 +64,16 @@
             </div>
             <div class="campo">
               <label for="image">Upload de foto:</label>
-              <input id="image" type="file" name="UserImage" accept="image/*" />
+              <input
+                id="image"
+                type="file"
+                name="UserImage"
+                accept="image/*"
+                aria-describedby="imageHelp"
+              />
+              <small id="imageHelp"
+                >Envie uma foto no formato PNG ou JPEG</small
+              >
             </div>
           </fieldset>
 
