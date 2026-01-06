@@ -1,11 +1,36 @@
 :root {
   --cor-texto: #333333;
   --cor-fundo: #ffffff;
+  --cor-primaria: #004a99;
 }
 
 .theme-high-contrast {
   --cor-texto: #000000;
   --cor-fundo: #ffffff;
+}
+
+.pos-sucesso {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botao-voltar {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--cor-primaria, #004a99);
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.botao-voltar:hover {
+  background-color: #ffffff;
+  color: var(--cor-primaria, #004a99);
+  border-color: var(--cor-primaria, #004a99);
 }
 
 html {
@@ -30,7 +55,10 @@ header {
 }
 
 img {
+  display: block;
+  margin: 0 auto;
   width: 100px;
+  padding-top: 20px;
 }
 
 h1 {
@@ -38,6 +66,13 @@ h1 {
   font-size: 2rem;
   text-align: center;
   margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 10px;
+  color: var(--cor-texto);
 }
 
 form {
